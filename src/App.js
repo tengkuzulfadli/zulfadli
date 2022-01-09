@@ -4,7 +4,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import './app.css';
+import './App.css';
 import Cta from './components/Cta';
 import Footer from './components/Footer';
 import Header from './components/Header';
