@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Github.css";
 import data from "./data/github.json";
-import Icon from "../../public/GitHub-logo.png";
+import Icon from "../../public/icon-dev.png";
 
 const githubData = data.map((data) => {
     return(
