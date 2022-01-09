@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+
+.main-nav {
+  font-family: 'Barlow', sans-serif;
+  display: flex;
+  flex-direction:row;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  align-text: center;
+}
+
+.nav{
+  padding-right:15px;
+  padding-left:15px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e1919;
+  text-transform: uppercase;
+}
+
+.second-nav{
+  display: flex;
+  flex-direction:row;
+}
+
+.logo{
+  box-shadow: -2px 8px 8px -2px #bfcbce;
+  border-radius: 50%
+}
+
+.line {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.line:before, .line:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: #A2ADA5;
+}
+
+.line:before {
+  left: -2.5px;
+}
+.line:after {
+  right: 2.5px;
+  background: #A2ADA5;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.line:hover:before {
+  background: #A2ADA5;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.line:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-nav {
+    width:100%;
+  }
+  .second-nav {
+    flex-direction: column;
+    text-align: right;
+    padding-right: 5px;
+   
+  }
+  .nav {
+    width:100%;
+    font-size: 18px;
+    overflow: hidden;
+  }
+}

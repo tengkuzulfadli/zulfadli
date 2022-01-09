@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+
+.main-github {
+    font-family: 'Barlow', sans-serif;
+    display: inline-block;
+    width: 240px;
+    text-align: center;
+    margin: 40px 15px 20px 15px;
+}
+
+.img-container {
+    height: 230px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 0px 0px 20px 20px;
+    display: inline-block;
+}
+
+.img-container .icon {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    transform: skew(0deg, -13deg);
+    height: 150px;
+    margin: -5px 0px 0px -70px;
+}
+
+.inner-skew {
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0px;
+    transform: skew(0deg, 13deg);
+    font-size: 0px;
+    margin: 30px 0px 0px 0px;
+    background: #f5f5f5;
+    border: 2px solid #A2ADA5;
+    height: 250px;
+    width: 200px;
+}
+
+.single-card {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    padding: 120px 20px 20px 20px;
+    border-radius: 20px;
+    background: #fff;
+    margin: -120px 0px 0px 0px;
+    line-height: 19px;
+    font-size: 14px;
+}
+
+.single-card .single-title {
+    margin: 20px 0px 10px 0px;
+    color: #A2ADA5;
+    font-size: 21px;
+}
+
+.text-des, .text-stack {
+    margin: 10px 0px 10px 0px;
+}
+
+.text-des {
+    font-size: 16px;
+}
+
+.text-stack{
+    font-style: italic;
+    font-size: 15px;
+}
+
+.text-link {
+    text-decoration: underline;
+    color: #A2ADA5;
+}
+
+.btn-github {
+    margin-top: 20px;
+    font-size: 18px;
+    border-style: none;
+    background: #fff;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn-github:hover {
+    font-size: 22px;
+    text-decoration: underline;
+}
