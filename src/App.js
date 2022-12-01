@@ -1,20 +1,10 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 import './App.css';
-import Cta from './components/Cta';
-import Footer from './components/Footer';
-import Header from './components/Header';
+import HomeBody from "./HomeBody";
 
 function App() {
   return (
     <div className="app">
-      <Header />
-      <Cta />
-      <Footer />
+      <HomeBody />
     </div>
   );
 }

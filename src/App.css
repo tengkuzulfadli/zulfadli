@@ -1,3 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
 .app {
     overflow: hidden;
+}
+
+.intro {
+    margin-top: 2rem;
+    color: dimgray;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+    letter-spacing: 1.5px;
+}
+
+.icon-ln, .icon-git, .icon-so {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+    box-shadow: -2px 8px 8px -1px #bfcbce;
+}
+
+.icon-ln:hover, .icon-git:hover, .icon-so:hover{
+    transform: translate(-10px, 10px);
+	border-color: #A2ADA5;
+	box-shadow: 0 0 0 0 #000000;
+}
+
+.icon-ln{
+    color: #0072b1;
+}
+
+.icon-so {
+    color: #ef8236;
+    border: 1px #1e1919;
+}
+
+.btn-icons {
+    background: transparent;
+    border-style: none;
+    padding: 1.5rem;
+}
+
+@media only screen and (max-width: 768px){
+    .icon-ln, .icon-git, .icon-so {
+        width: 30px;
+        height: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
