@@ -1,31 +1,15 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import Icon from "../public/personal.jpeg"
 import { TiSocialLinkedinCircular } from "react-icons/ti";
-import { FaStackOverflow, FaGithub } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 import "./App.css";
 
 const HomeBody = () => {
-    const [linkedin, setLinkedin] = useState(false);
-    const [github, setGithub] = useState(false);
-    const [so, setSo] = useState(false);
 
-    useEffect(() => {
-        if (linkedin) {
-            window.open('https://www.linkedin.com/in/tengkuzulfadli');
-        }
-    })
-
-    useEffect(() => {
-        if (github) {
-            window.open('https://github.com/tengkuzulfadli');
-        }
-    })
-
-    useEffect(() => {
-        if (so) {
-            window.open('https://stackoverflow.com/users/13414493/tengkuzulfadli');
-        }
-    })
+    let linkedInUrl = 'https://www.linkedin.com/in/tengkuzulfadli'
+    let githubUrl = 'https://github.com/tengkuzulfadli'
+    let googleUrl = 'https://www.cloudskillsboost.google/public_profiles/0553bf23-bbb6-4383-a9d7-40a65871cbc6'
 
     return(
         <>
@@ -37,16 +21,16 @@ const HomeBody = () => {
                 <h4>JavaScript | SWIFT | GCP | Product Management</h4>
             </div>
             <div>
-                <button onClick={() => setLinkedin(true)} target="_blank" className="btn-icons">
+                <button onClick={() => window.location.href = linkedInUrl } target="_blank" className="btn-icons">
                     <TiSocialLinkedinCircular className="icon-ln" />
                 </button>
 
-                <button onClick={() => setGithub(true)} target="_blank" className="btn-icons">
+                <button onClick={() => window.location.href = githubUrl } target="_blank" className="btn-icons">
                     <FaGithub className="icon-git" />
                 </button>
 
-                <button onClick={() => setSo(true)} target="_blank" className="btn-icons">
-                    <FaStackOverflow className="icon-so" />
+                <button onClick={() => window.location.href = googleUrl } target="_blank" className="btn-icons">
+                    <FcGoogle className="icon-so" />
                 </button>
             </div>
         </>
